@@ -1,0 +1,136 @@
+@use "../basecore/globals";
+@use "../variables/colors";
+@use "../utils/pixels-rems";
+@use "../variables/font";
+
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap");
+
+.component-box {
+  box-sizing: border-box;
+  padding: 0 30px;
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: colors.$color-primary;
+}
+.component-box__header img {
+  border-radius: 15px 15px 0px 0;
+  max-width: 375px;
+  background-color: #ffff;
+  margin-bottom: -4px;
+  width: 100vw;
+  max-width: 100%;
+}
+
+.component-box__main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  max-width: 100%;
+  background-color: white;
+  padding-top: 25px;
+  span {
+    color: colors.$color-neutral-dark;
+    font-weight: 700;
+    font-size: pixels-rems.pxToRem(30);
+  }
+  p {
+    max-width: 300px;
+    text-align: center;
+    font-size: 14.5px;
+    color: colors.$color-neutral-desaturated;
+    width: 60vw;
+  }
+}
+
+.component-box__plan {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  background-color: hsl(225deg, 100%, 98%);
+  padding: 10px 10px;
+  border-radius: 10px;
+  width: 65vw;
+  .plan-price {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .plan-price__subscription {
+    font-weight: 700;
+    font-size: 15px;
+  }
+  button {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: hsl(225deg, 100%, 98%);
+    border: none;
+    color: hsl(245deg, 75%, 52%);
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 13px;
+  }
+  .plan-price__price {
+    font-size: 12px;
+  }
+  .component-box__plan img {
+    width: 10vw;
+  }
+  img {
+    width: 20%;
+  }
+}
+.component-box-info {
+  background-color: white;
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.component-box__final-buttons {
+  background-color: white;
+  max-width: 100%;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 1rem;
+  border-radius: 0px 0px 15px 15px;
+  padding-bottom: 30px;
+  margin: 0 30px;
+  .button-payment {
+    background-color: hsl(245deg, 75%, 52%);
+    border: none;
+    color: white;
+    height: 3rem;
+    border-radius: 10px;
+    margin-bottom: 1.6rem;
+    font-family: "Red Hat Display";
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 65vw;
+  }
+  .button-cancel {
+    background-color: white;
+    border: none;
+    font-size: 1rem;
+    color: hsl(224deg, 23%, 55%);
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .button-cancel:hover {
+    color: colors.$color-neutral-dark;
+  }
+}

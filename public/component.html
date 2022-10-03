@@ -11,34 +11,35 @@
       sizes="32x32"
       href="./img/favicon-32x32.png"
     />
-
-    <title>Frontend Mentor | Order summary card</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <section></section>
-    <span>Summary</span>
-    <p>
-      You can now listen to millions of songs, audiobooks, and podcasts on any
-      device anywhere you like! Annual Plan $59.99/year Change Proceed to
-      Payment Cancel Order
-    </p>
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    <section class="component-box">
+      <div class="component-box__header">
+        <img src="./img/illustration-hero.svg" alt="" />
+      </div>
+      <div class="component-box__main-content">
+        <span>Summary</span>
+        <p>
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+      </div>
+      
+      <div class="component-box-info">
+        <aside class="component-box__plan">
+        <img src="./img/icon-music.svg"></img>
+        <article class="component-box__plan plan-price">
+          <span class="plan-price__subscription">Annual Plan</span>
+          <span class="plan-price__price">$59.99/year</span>
+        </article>
+        <button class="change-button">Change</button>
+      </div>
+      <div class="component-box__final-buttons">
+      <button class="button-payment">Proceed to Payment</button>
+      <button class="button-cancel">Cancel Order</button>
+      </div>
+      </aside>
+    </section>
   </body>
 </html>

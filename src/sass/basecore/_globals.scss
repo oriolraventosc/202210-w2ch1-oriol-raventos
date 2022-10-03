@@ -3,6 +3,10 @@
 
 body {
   font-family: "Red hat display";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
   p {
     font-size: pixels-rems.pxToRem(16);
     color: blue;
@@ -19,4 +23,10 @@ html {
 }
 
 @media (min-width: 900px) {
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+  }
 }

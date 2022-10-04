@@ -21,6 +21,16 @@ body {
 html {
   background-color: hsl(225deg, 100%, 94%);
 }
+.main-title {
+  font-family: "Red hat display";
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  text-align: center;
+}
+ul {
+  list-style: none;
+}
 
 @media (min-width: 900px) {
   * {

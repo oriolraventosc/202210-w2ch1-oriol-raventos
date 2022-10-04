@@ -164,6 +164,10 @@
     background-color: white;
     padding-top: 25px;
   }
+
+  .component-box__plan button:hover {
+    color: #766cf1;
+  }
   .component-box-info {
     background-color: white;
     width: 100vw;
@@ -207,6 +211,9 @@
     font-size: 1rem;
     cursor: pointer;
     max-width: 250px;
+  }
+  .component-box__final-buttons .button-payment:hover {
+    background-color: #766cf1;
   }
   .component-box__final-buttons .button-cancel {
     background-color: white;
